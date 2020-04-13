@@ -18,7 +18,7 @@ env:
   #################################################
 
 jobs:
-  setup-up-azure-resources:
+  setup-azure-resources:
     runs-on: ubuntu-latest
 
     if: contains(github.event.pull_request.labels.*.name, 'spin up environment')
