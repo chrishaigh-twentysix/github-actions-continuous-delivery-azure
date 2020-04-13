@@ -64,7 +64,7 @@ jobs:
         if: success()
         run: |
           az webapp config container set \
-            --docker-custom-image-name nginx z
+            --docker-custom-image-name nginx \
             --docker-registry-server-password ${{ secrets.GITHUB_TOKEN }} \
             --docker-registry-server-url https://docker.pkg.github.com \
             --docker-registry-server-user ${{ github.actor }} \
